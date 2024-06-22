@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!**/models/FN2-17/*
+!bomb.py
+!export_model.py
+!fruit.py
+!game.py
+!main.py
+!path_search.py
+!requirements.txt
+!view_data.py
+!YoloV8Testing.py
+!YoloV8Training.py
+
+# ...even if they are in subdirectories
+!*/
