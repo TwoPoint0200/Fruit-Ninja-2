@@ -3,7 +3,7 @@
 
 # But not these files...
 !.gitignore
-!**/models/FN2-17/*
+!**/models/FN2-17/**/*
 !bomb.py
 !export_model.py
 !fruit.py
@@ -14,6 +14,7 @@
 !view_data.py
 !YoloV8Testing.py
 !YoloV8Training.py
+!**/TestImages/*
 
 # ...even if they are in subdirectories
 !*/
