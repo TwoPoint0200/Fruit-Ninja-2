@@ -14,6 +14,7 @@
 !YoloV8Testing.py
 !YoloV8Training.py
 !**/TestImages/*
+!./README.md
 
 # ...even if they are in subdirectories
 !*/
