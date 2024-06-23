@@ -3,3 +3,7 @@ ultralytics>=8.0.196
 pynput
 bettercam
 numpy
+opencv-python
+pillow
+keyboard
+PyGetWindow

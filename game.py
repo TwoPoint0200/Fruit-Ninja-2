@@ -1,10 +1,8 @@
 from fruit import Fruit
-from bomb import Bomb
 import torch
 import path_search as ps
 import numpy as np
 import matplotlib.pyplot as plt
-import time
 
 class Game:
     def __init__(self):

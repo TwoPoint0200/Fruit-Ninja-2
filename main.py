@@ -13,15 +13,6 @@ import bettercam
 
 mouse = Controller()
 cached_app_position = []
-
-# Get the position of a window by its title using the pygetwindow library
-def get_window_position(window_title):
-    try:
-        window = gw.getWindowsWithTitle(window_title)[0]
-        return window
-    except IndexError:
-        print(f"No window with title '{window_title}' found.")
-        return None
     
 
 # Create a new camera object to capture the screen
@@ -32,6 +23,10 @@ def capture_window_screenshot(window_title, new_size=(640, 640)):
     try:
         # Check if the cached dimensions are available
         # If they are not, calculate the dimensions and cache them
+
+        # NOTE: The dimensions are hardcoded for the BlueStacks window
+        # These dimensions are for a 1920x1080 monitor with blustacks window maximized (not fullscreen)
+        # and the right sidebar in BlueStacks hidden
         if len(cached_app_position) < 1:
             window = gw.getWindowsWithTitle(window_title)[0]
             app_x = window.left + 73
